@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="item_current">#FFb7dbff</color>
+ <color name="item_undone">#FFEEEEEE</color>
+ <color name="item_done_good">#FF88e58e</color>
+ <color name="item_done_mistake">#FFfff1b7</color>
+ <color name="item_done_bad">#FFffb7b7</color>
+</resources>
