@@ -1,89 +1,23 @@
 package com.jzap.ortophonie.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.jzap.ortophonie.R;
-import com.jzap.ortophonie.activity.SyllabeCibleActivity_;
+import org.codehaus.jackson.annotate.JsonAnySetter;
 
 public class TherapyActivity {
 
-	public static final List<TherapyActivity> activities;
-	
-	static {
-		activities = new ArrayList<TherapyActivity>();
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_abeille));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ane));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_avocat));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ballon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bananes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_biberon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bonnet));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bottes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_abeille));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ane));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_avocat));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ballon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bananes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_biberon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bonnet));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bottes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_abeille));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ane));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_avocat));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ballon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bananes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_biberon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bonnet));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bottes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_abeille));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ane));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_avocat));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ballon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bananes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_biberon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bonnet));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bottes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_abeille));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ane));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_avocat));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_ballon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bananes));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_biberon));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bonnet));
-		activities.add(new TherapyActivity(1L, "Repérage des syllabes cibles", "Retrouver le mot qui contient la syllable présentée", SyllabeCibleActivity_.class, R.drawable.img_bottes));
-	}
-	
-	private Long id;
-	
-	private String name, description;
-	
-	private Class<?> activity;
-
-	private final int imageId;
-	
-	public TherapyActivity(Long id, String name, String description, Class<?> activity, int imageId) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.description = description;
-		this.activity = activity;
-		this.imageId = imageId;
-	}
-	
-	public Class<?> getActivity() {
-		return activity;
-	}
-	
-	public void setActivity(Class<?> activity) {
-		this.activity = activity;
+	// Wrapper for activity list
+	public static class TherapyActivityList {
+		public List<TherapyActivity> activities;
 	}
 
-	public Long getId() {
+	private String id, name, image, description, category, type;
+
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -95,6 +29,14 @@ public class TherapyActivity {
 		this.name = name;
 	}
 
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
 	public String getDescription() {
 		return description;
 	}
@@ -102,10 +44,26 @@ public class TherapyActivity {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	public int getImageId() {
-		return imageId;
+
+	public String getCategory() {
+		return category;
 	}
-	
-	
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	@JsonAnySetter
+	public void set(String name, Object value) {
+		// Nothing, allow extra fields in JSON
+		// representation while unmarshalling.
+	}
 }
