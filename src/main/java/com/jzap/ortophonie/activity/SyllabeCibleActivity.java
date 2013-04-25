@@ -15,6 +15,7 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.googlecode.androidannotations.annotations.AfterViews;
+import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.ViewById;
 import com.jzap.ortophonie.R;
@@ -55,7 +56,7 @@ public class SyllabeCibleActivity extends Activity implements
 	private SyllabeCibleAdapter adapter;
 
 	private SyllabeCibleModel currentItem;
-	
+
 	@AfterViews
 	protected void init() {
 		prepareProgressBar(SyllabeCibleModel.syllabeCibleItems);

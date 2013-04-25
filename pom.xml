@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.joanzap.android.ortophonie</groupId>
-	<artifactId>speech-therapy-android</artifactId>
+	<groupId>com.jzap.ortophonie</groupId>
+	<artifactId>Orthophonie</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>apk</packaging>
-	<name>Speech Therapy</name>
+	<name>Orthophonie</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,6 @@
 		<android-maven-plugin.version>3.5.0</android-maven-plugin.version>
 		<maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
 		<api.platform>16</api.platform>
-		<java.version>1.6</java.version>
 
 		<!-- Dependencies -->
 		<androidannotations.version>2.7</androidannotations.version>
@@ -58,13 +57,6 @@
 			<artifactId>base-adapter-helper</artifactId>
 			<version>${base-adapter-helper.version}</version>
 		</dependency>
-		<!-- Jackson JSON Processor -->
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.12</version>
-		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -84,8 +76,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>1.6</source>
+					<target>1.6</target>
 				</configuration>
 			</plugin>
 		</plugins>
