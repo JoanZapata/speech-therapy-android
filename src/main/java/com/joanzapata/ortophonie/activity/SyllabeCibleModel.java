@@ -1,11 +1,11 @@
-package com.jzap.ortophonie.activity;
+package com.joanzapata.ortophonie.activity;
 
 import static java.util.Arrays.asList;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jzap.ortophonie.R;
+import com.joanzapata.ortophonie.R;
 
 public class SyllabeCibleModel {
 	

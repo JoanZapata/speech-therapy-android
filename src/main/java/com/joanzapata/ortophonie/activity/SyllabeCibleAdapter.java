@@ -1,4 +1,4 @@
-package com.jzap.ortophonie.activity;
+package com.joanzapata.ortophonie.activity;
 
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 import static android.text.Html.fromHtml;
@@ -11,7 +11,6 @@ import java.util.Map;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +19,6 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.BounceInterpolator;
-import android.view.animation.Interpolator;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
@@ -29,9 +27,9 @@ import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
-import com.jzap.ortophonie.R;
-import com.jzap.util.CustomRelativeLayout;
-import com.jzap.util.CustomRelativeLayout.OnSizeChangedListener;
+import com.joanzapata.ortophonie.R;
+import com.joanzapata.util.CustomRelativeLayout;
+import com.joanzapata.util.CustomRelativeLayout.OnSizeChangedListener;
 
 public class SyllabeCibleAdapter extends PagerAdapter {
 

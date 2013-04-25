@@ -1,8 +1,4 @@
-package com.jzap.ortophonie.activity;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package com.joanzapata.ortophonie.activity;
 
 import android.app.Activity;
 import android.support.v4.view.ViewPager;
@@ -13,12 +9,14 @@ import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
+import com.joanzapata.ortophonie.R;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
-import com.googlecode.androidannotations.annotations.AfterViews;
-import com.googlecode.androidannotations.annotations.Click;
-import com.googlecode.androidannotations.annotations.EActivity;
-import com.googlecode.androidannotations.annotations.ViewById;
-import com.jzap.ortophonie.R;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @EActivity(R.layout.activity_syllabe_cible)
 public class SyllabeCibleActivity extends Activity implements

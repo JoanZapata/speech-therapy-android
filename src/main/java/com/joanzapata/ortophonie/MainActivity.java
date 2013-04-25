@@ -1,23 +1,22 @@
-package com.jzap.ortophonie;
+package com.joanzapata.ortophonie;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.widget.ListView;
-
-import com.googlecode.androidannotations.annotations.AfterViews;
-import com.googlecode.androidannotations.annotations.EActivity;
-import com.googlecode.androidannotations.annotations.ItemClick;
-import com.googlecode.androidannotations.annotations.ViewById;
-import com.googlecode.androidannotations.annotations.rest.RestService;
-import com.jzap.ortophonie.model.TherapyActivity;
-import com.jzap.ortophonie.rest.RestClient;
+import com.joanzapata.ortophonie.model.TherapyActivity;
+import com.joanzapata.ortophonie.rest.RestClient;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ItemClick;
+import org.androidannotations.annotations.ViewById;
+import org.androidannotations.annotations.rest.RestService;
 
 @EActivity(R.layout.activity_main)
 public class MainActivity extends Activity {
 
 	@RestService
 	RestClient restClient;
-	
+
 	@ViewById
 	ListView activityList;
 

@@ -2,6 +2,8 @@
 .factorypath
 .project
 .settings/
+.idea/
+*.iml
 apt_generated/
 bin/
 gen/

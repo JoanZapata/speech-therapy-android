@@ -1,8 +1,4 @@
-package com.jzap.ortophonie;
-
-import java.util.List;
-
-import com.jzap.ortophonie.model.TherapyActivity;
+package com.joanzapata.ortophonie;
 
 import android.content.Context;
 import android.view.View;
@@ -10,6 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.joanzapata.ortophonie.model.TherapyActivity;
+
+import java.util.List;
 
 public class ActivityListAdapter extends BaseAdapter {
 

@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jzap.ortophonie</groupId>
+	<groupId>com.joanzapata.ortophonie</groupId>
 	<artifactId>Orthophonie</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>apk</packaging>
@@ -17,7 +17,7 @@
 		<api.platform>16</api.platform>
 
 		<!-- Dependencies -->
-		<androidannotations.version>2.7</androidannotations.version>
+		<androidannotations.version>3.0-SNAPSHOT</androidannotations.version>
 		<android.version>4.1.1.4</android.version>
 		<spring-android-rest-template.version>1.0.0.RELEASE</spring-android-rest-template.version>
 		<support-v4.version>r7</support-v4.version>
@@ -32,13 +32,13 @@
 			<version>${android.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.googlecode.androidannotations</groupId>
+			<groupId>org.androidannotations</groupId>
 			<artifactId>androidannotations</artifactId>
 			<version>${androidannotations.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.googlecode.androidannotations</groupId>
+			<groupId>org.androidannotations</groupId>
 			<artifactId>androidannotations-api</artifactId>
 			<version>${androidannotations.version}</version>
 		</dependency>
@@ -53,7 +53,7 @@
 			<version>${support-v4.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.joanzap.android</groupId>
+			<groupId>com.joanzapata.android</groupId>
 			<artifactId>base-adapter-helper</artifactId>
 			<version>${base-adapter-helper.version}</version>
 		</dependency>
